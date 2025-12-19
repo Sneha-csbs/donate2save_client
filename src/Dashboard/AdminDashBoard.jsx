@@ -49,16 +49,16 @@ export default function AdminDashBoard() {
     const token = localStorage.getItem('token');
     try {
       const [usersRes, requestsRes, appointmentsRes, historyRes] = await Promise.all([
-        fetch('http://localhost:5000/api/admin/users', {
+        fetch('https://donate2save-server.onrender.com/api/admin/users', {
           headers: { Authorization: `Bearer ${token}` }
         }),
-        fetch('http://localhost:5000/api/admin/requests', {
+        fetch('https://donate2save-server.onrender.com/api/admin/requests', {
           headers: { Authorization: `Bearer ${token}` }
         }),
-        fetch('http://localhost:5000/api/admin/appointments', {
+        fetch('https://donate2save-server.onrender.com/api/admin/appointments', {
           headers: { Authorization: `Bearer ${token}` }
         }),
-        fetch('http://localhost:5000/api/admin/donor-history', {
+        fetch('https://donate2save-server.onrender.com/api/admin/donor-history', {
           headers: { Authorization: `Bearer ${token}` }
         })
       ]);
@@ -80,7 +80,7 @@ export default function AdminDashBoard() {
   const updateUser = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/users/${editingUser._id}`, {
+      const res = await fetch(`https://donate2save-server.onrender.com/api/admin/users/${editingUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -102,7 +102,7 @@ export default function AdminDashBoard() {
   const deleteUser = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/users/${id}`, {
+      const res = await fetch(`https://donate2save-server.onrender.com/api/admin/users/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -118,7 +118,7 @@ export default function AdminDashBoard() {
   const deleteRequest = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/requests/${id}`, {
+      const res = await fetch(`https://donate2save-server.onrender.com/api/admin/requests/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
@@ -134,7 +134,7 @@ export default function AdminDashBoard() {
   const deleteAppointment = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/appointments/${id}`, {
+      const res = await fetch(`https://donate2save-server.onrender.com/api/admin/appointments/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });

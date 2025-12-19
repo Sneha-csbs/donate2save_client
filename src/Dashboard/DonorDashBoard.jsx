@@ -72,7 +72,7 @@ export default function DonorDashBoard() {
   const checkEmergencyNotifications = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/notifications/emergency', {
+      const response = await fetch('https://donate2save-server.onrender.com/api/notifications/emergency', {
         headers: { Authorization: `Bearer ${token}` }
       });
       
@@ -92,7 +92,7 @@ export default function DonorDashBoard() {
   const markNotificationRead = async (notificationId) => {
     try {
       const token = localStorage.getItem('token');
-      await fetch(`http://localhost:5000/api/notifications/${notificationId}/read`, {
+      await fetch(`https://donate2save-server.onrender.com/api/notifications/${notificationId}/read`, {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}` }
       });
