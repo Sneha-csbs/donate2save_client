@@ -1,0 +1,132 @@
+/* SIDEBAR */
+.sidebar {
+  background: #A30029 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.logoBox {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding:3px;
+  margin-top: 3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Sidebar Menu */
+.menuItems {
+  background-color: #A30029;
+}
+.menuItems .ant-menu-item {
+  font-size: 16px !important;
+  height: 50px !important;
+  color:#ddd;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menuItems .ant-menu-item-selected {
+  background: #f7f5f5 !important;
+  font-weight: 600;
+  color:#A30029;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logout {
+    background-color: white;
+    color:#A30029;
+    justify-items: center;
+    padding-left: 3px;
+    align-content: center;
+    border-radius: 2px;
+    height:30px;
+    width:60px;
+    margin-top: 160px;
+    margin-left: 13px;
+    border:none;
+    font-size: 13px;
+    cursor:pointer;
+    position:fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* MAIN CONTENT */
+.content {
+  margin: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CARDS */
+.card {
+  border-radius: 12px !important;
+  box-shadow: 2px 2px 2px 2px #A30029;
+  background-color: white;
+  margin-bottom: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcomeTitle {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcomeSub {
+  font-size: 17px;
+  color: #555;
+  margin-top: -5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* TO-DO */
+.todoItem {
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* BLOOD AVATAR */
+.bloodAvatar {
+  background: #fff;
+  color: #A30029;
+  border: 1px solid #ddd;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* REQUEST */
+.reqHospital {
+  font-weight: 700;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.but{
+  background-color: #A30029;
+  color: #ddd;
+}
+
+/* BADGES */
+.badgeTag {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  gap:5px;
+  margin-bottom: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

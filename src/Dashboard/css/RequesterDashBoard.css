@@ -1,0 +1,111 @@
+/* SIDEBAR */
+.requester-sidebar {
+  background: #A30029 !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logoBox {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 6px;
+  margin-top: 3px;
+}
+
+.logo {
+  width: 120px;
+  margin-right: 2px;
+}
+
+/* Sidebar Menu */
+.menuItems {
+  background-color: #A30029;
+}
+.menuItems .ant-menu-item {
+  font-size: 16px !important;
+  height: 50px !important;
+  color: #f0eaea;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menuItems .ant-menu-item-selected {
+  background: #f7f5f5 !important;
+  font-weight: 600;
+  color: #A30029;
+}
+
+.r-logout {
+  background-color: white;
+  color: #A30029;
+  padding-left: 6px;
+  border-radius: 2px;
+  height: 36px;
+  width: 70px;
+  margin-top: 160px;
+  margin-left: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  position: fixed;
+}
+
+/* MAIN CONTENT */
+.requester-content {
+  margin: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CARDS */
+.card {
+  border-radius: 12px !important;
+  box-shadow: 2px 2px 2px 2px #A30029;
+  background-color: white;
+  margin-bottom: 20px;
+
+}
+
+.welcomeTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.welcomeSub {
+  font-size: 15px;
+  color: #555;
+  margin-top: -4px;
+}
+
+.muted {
+  color: #666;
+}
+
+/* Inventory low highlight */
+.low {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+/* Buttons and layout tweaks */
+.ant-btn-primary ,.va-button{
+  background: #A30029;
+  border-color: #A30029;
+  color:#ddd;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 12px;
+  color: white;
+  background: #A30029;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Modal tweaks */
+.ant-modal-content {
+  border-radius: 10px;
+}
