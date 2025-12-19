@@ -421,7 +421,7 @@ export default function RequesterDashBoard() {
                         onClick={async () => {
                           try {
                             const token = localStorage.getItem('token');
-                            await fetch('http://localhost:5000/api/appointments/emergency-contact', {
+                            await fetch('https://donate2save-server.onrender.com/api/appointments/emergency-contact', {
                               method: 'POST',
                               headers: {
                                 'Content-Type': 'application/json',
