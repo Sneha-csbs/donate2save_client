@@ -360,10 +360,8 @@ export default function DonorDashBoard() {
                               
                               message.success(`Request accepted! Appointment scheduled for ${appointmentDate} at ${appointmentTime}`);
                               
-                              // Refresh appointments to show the new one
-                              setTimeout(() => {
-                                window.location.reload();
-                              }, 1000);
+                              // Refresh appointments data instead of reloading page
+                              await fetchDonorData();
                             } catch (error) {
                               console.error('Failed to accept request:', error);
                               message.error('Failed to accept request. Please try again.');

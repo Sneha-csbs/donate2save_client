@@ -1,4 +1,6 @@
-const API_BASE_URL = 'https://donate2save-server.onrender.com/api';
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://donate2save-server.onrender.com/api'
+  : 'http://localhost:5000/api';
 
 // Get auth token from localStorage
 const getAuthToken = () => {
